@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Playlist</title>
+<style>
+    body {
+        background-color: rgb(204, 204, 204);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    ul {
+        padding: 0;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    li {
+        list-style-type: none;
+        background: white;
+        margin: 8px 0;
+        padding: 10px 15px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    a {
+        text-decoration-line: none;
+        color: #333;
+        font-weight: bold;
+    }
+    .player_one, .player_two {
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .player_one video, .player_two audio {
+        width: 100%;
+    }
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<h1>My Playlist</h1>
+
+<h2>Now Playing...</h2>
+<div class="player_one">
+    <video controls>
+        <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+    </video>
+</div>
+
+<h2>MP3 songs</h2>
+<div class="player_two">
+    <audio controls>
+        <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+    </audio>
+</div>
+
+<ul>
+    <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 1 - Top Hit</a></li>
+    <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 2 - Favourite</a></li>
+    <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 3 - Lofi Mix</a></li>
+    <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 4 - Party Song</a></li>
+    <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 5 - Chill Vibes</a></li>
+</ul>
 
 </body>
-
 </html>
